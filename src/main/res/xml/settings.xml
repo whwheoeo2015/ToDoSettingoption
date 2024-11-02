@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <PreferenceCategory
+        app:key="notification"
+        app:title="Alarm Setting">
+        <SwitchPreferenceCompat
+            app:key="noti_message"
+            app:title="Alarm Message"/>
+        <SwitchPreferenceCompat
+            app:key="noti_sound"
+            app:title="Alarm Sound"/>
+    </PreferenceCategory>
+    <PreferenceCategory
+        app:key = "etc"
+        app:title = "Etc Setting">
+        <EditTextPreference
+            app:key="id"
+            app:title="ID Setting"/>
+        <ListPreference
+            android:entries="@array/my_color"
+            app:entryValues="@array/my_color_values"
+            app:key="color"
+            app:title="Selection of Color"/>
+    </PreferenceCategory>
+</PreferenceScreen>
